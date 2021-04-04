@@ -1,5 +1,7 @@
 package com.abhijit.microservices.currencyexchangeservice;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.server.LocalServerPort;
@@ -10,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CurrencyExchengeController {
-	
+	private Logger logger=LoggerFactory.getLogger(this.getClass()); 
 	@Autowired
 	private ExchangeValueRepository repository;
 	@Value("${server.port}")
@@ -20,6 +22,7 @@ public class CurrencyExchengeController {
 	public ExchangeValue retrieveExchangeValue(@PathVariable String from,@PathVariable String to) {
 		ExchangeValue ev= repository.findByFromAndTo(from, to);
 		ev.setPort(serverPort);
+		logger.info("{}", ev);  
 		return ev;
 	}
 }

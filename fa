@@ -1,0 +1,77 @@
+[33mcommit 46dc3d513f9d43d8dd944568086ed78ca574cb09[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Abhijit-Dixit <abhijitdixitent@gmail.com>
+Date:   Tue Mar 23 00:19:44 2021 +0530
+
+    added Zuul API gateway logging filter between the services
+
+[33mcommit 000de06a155d69d084da727b7167cadc8671c9cd[m
+Author: Abhijit-Dixit <abhijitdixitent@gmail.com>
+Date:   Sun Mar 21 23:01:15 2021 +0530
+
+    connected currency exchange and currency conversion to Eureka
+
+[33mcommit 2ee776a0018f2b37142b1218518cbcca63ea0409[m
+Author: Abhijit-Dixit <abhijitdixitent@gmail.com>
+Date:   Sun Mar 21 18:52:00 2021 +0530
+
+    used ribben for load distribution among various instances of currency-exchange-service
+
+[33mcommit 99322b7eac407565d58e95d4da58fcb65b10d104[m
+Author: Abhijit-Dixit <abhijitdixitent@gmail.com>
+Date:   Sun Mar 21 17:29:31 2021 +0530
+
+    used feign for REST call to currency-exchange-service from currency-conversion-service
+
+[33mcommit 79404a993c9fba9f23eb52e0e7aa113520c288b6[m
+Author: Abhijit-Dixit <abhijitdixitent@gmail.com>
+Date:   Sun Mar 21 12:26:01 2021 +0530
+
+    completed currency conversion service
+
+[33mcommit 1fca9e247c3a0b59476b094338395ec2822b64d0[m
+Author: Abhijit-Dixit <abhijitdixitent@gmail.com>
+Date:   Sun Mar 21 10:54:48 2021 +0530
+
+    Completed currency exchange servive
+
+[33mcommit 34db549b8624a9428705af30019eeaa09d57d76c[m
+Author: Abhijit-Dixit <abhijitdixitent@gmail.com>
+Date:   Tue Mar 16 16:32:45 2021 +0530
+
+    Used jpa for storing conversion rates
+
+[33mcommit 5e83b42bb40362b238f642fca056b00f700c890d[m
+Author: Abhijit-Dixit <abhijitdixitent@gmail.com>
+Date:   Mon Mar 15 17:52:03 2021 +0530
+
+    created currency-exchange-service
+
+[33mcommit f0181651a22bb9ccbb1e732fa4d9a896d1513bf2[m
+Author: Abhijit-Dixit <abhijitdixitent@gmail.com>
+Date:   Mon Mar 15 15:44:29 2021 +0530
+
+    connected limits-services with cloud-config-server
+
+[33mcommit d8d86d282914ba0dc746ac135bc53990b07a02a8[m
+Author: Abhijit-Dixit <abhijitdixitent@gmail.com>
+Date:   Sat Mar 13 14:17:08 2021 +0530
+
+    finally connected cloudconfig with git repo storing configurations
+
+[33mcommit e544a67f92367a142ae9f657d042632ddcaeb65a[m
+Author: Abhijit-Dixit <abhijitdixitent@gmail.com>
+Date:   Sat Mar 13 13:58:22 2021 +0530
+
+    trying git-local-config
+
+[33mcommit 836fa7c2d57eec3db25976507132d594905276d7[m
+Author: Abhijit-Dixit <abhijitdixitent@gmail.com>
+Date:   Sat Mar 13 13:38:24 2021 +0530
+
+    created folder git-local-config for centralized config storage
+
+[33mcommit 1a2a36ff3e29626d40332cd135e207b850fbc161[m
+Author: Abhijit-Dixit <abhijitdixitent@gmail.com>
+Date:   Thu Mar 11 15:02:50 2021 +0530
+
+    limits-service updated to take configuration from app.properties
